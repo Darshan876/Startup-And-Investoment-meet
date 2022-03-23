@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score-Card</title>
+    <style>
+      img {
+        background-image: no-repeat center center fixed;
+        opacity: 0.5;
+        background-size: cover;
+        border: 10px;
+        width: 250px;
+        border-color: blue;
+      }
+      body {
+        font-size: x-large;
+        text-align: center;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .center {
+        margin: 0;
+        position: absolute;
+        opacity: 0.8;
+        top: 15%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+      .a {
+        margin: 0;
+        position: absolute;
+        top: 15%;
+        left: 40%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+      h3 {
+        margin-left: 36%;
+      }
+      p {
+        color: red;
+        font-size: xx-large;
+        font-size-adjust: inherit;
+      }
+
+      button {
+        justify-content: center;
+        display: flex;
+      }
+
+      body {
+        background: url("cric.jpg") no-repeat center center fixed;
+        background-size: cover;
+        font-size: x - large;
+        text-align: center;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .container {
+        margin: 0;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-5%, -50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <img src="cric.jpg" />
+    <h1 style="color: red">Score-Card:</h1>
+    <p id="a1" style="font-family: 'Times New Roman'">RUN:</p>
+    <p id="a2">Ball:</p>
+    <p id="a3">Over:</p>
+    <p id="a4">Wicket:</p>
+    <div class="center">
+      <label id="click" onclick="startGame()">LET'S PLAY</label>
+    </div>
+    <script>
+      gone = 0;
+      ball1 = 0;
+      ball2 = 0;
+      run = 0;
+      over = 0;
+      isOver = false;
+      let ball = document.getElementById("a2");
+      let ovr = document.getElementById("a3");
+      let rn = document.getElementById("a1");
+      let wic = document.getElementById("a4");
+
+      function getRandomNum() {
+        return Math.floor(Math.random() * 7) + 1;
+      }
+      function startGame() {
+        let a = setInterval(renderGame, 200);
+
+        function renderGame() {
+          let val = getRandomNum();
+          console.log(val);
+          if (val < 7) {
+            run = run + val;
+            document.getElementById("a1").innerHTML = "RUN:" + " " + run;
+            console.log(run);
+            ball1++;
+            ball2++;
+          } else if (val == 7) {
+            gone = gone + 1;
+            document.getElementById("a4").innerHTML = "Wicket:" + "" + gone;
+            console.log(gone);
+            ball1++;
+            ball2++;
+          }
+          if (gone == 10 || over == 20) {
+            clearInterval(a);
+
+            alert("Game Over");
+          }
+          if (ball1 == 3) {
+            over = over + 1;
+            ball1 = 0;
+            document.getElementById("a3").innerHTML = "Over: " + over;
+            console.log(over);
+          }
+          if (ball2 == 60) {
+            ball2 = 0;
+            ball2++;
+            document.getElementById("a2").innerHTML = "Ball:" + " " + ball2;
+          }
+          document.getElementById("a2").innerHTML = "Ball:" + " " + ball2;
+        }
+      }
+    </script>
+  </body>
+</html>

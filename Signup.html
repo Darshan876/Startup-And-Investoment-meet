@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="Signup.css" />
+  </head>
+  <body>
+    <section>
+      <h1 style="color: #fff">Startup And Investment</h1>
+      <div class="box">
+        <div class="form">
+          <h2>Sign Up</h2>
+
+          <form>
+            <!-- check box for startup and Inventory -->
+            <div class="checkbox">
+              <td>
+                <input
+                  type="radio"
+                  name="become"
+                  value="Become A Pet Parent"
+                  required
+                />
+
+                <label>Startup Company</label>
+
+                <br />
+
+                <input
+                  type="radio"
+                  name="become"
+                  value="Become A Pet Provider"
+                  required
+                />
+                <label>Investor</label>
+              </td>
+            </div>
+            <br />
+
+            <!-- For Company Name -->
+            <div class="inputBx">
+              <input type="text" placeholder="Name" required />
+              <img src="company.png" />
+            </div>
+
+            <!-- Company Email Address -->
+            <div class="inputBx">
+              <input type="text" placeholder="Email Address" required />
+              <img src="email.png" />
+            </div>
+
+            <!-- For Location -->
+            <div class="inputBx">
+              <input type="text" placeholder="Address" required />
+              <img src="location.png" />
+            </div>
+
+            <!-- For Select state , City and Zip code -->
+            <div class="control-group">
+              <div class="col-md-4">
+                <label style="margin-left: 20px">State</label>
+                <select id="s1" style="width: 90px; height: 37px" required>
+                  <option disabled selected>Select state</option>
+                  <option>Gujarat</option>
+                  <option>Goa</option>
+                  <option>Assam</option>
+                  <option>Bihar</option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <label style="margin-left: 20px">City</label>
+                <select id="s1" style="width: 90px; height: 37px" required>
+                  <option disabled selected>Select city</option>
+                  <option>Deesa</option>
+                  <option>Palanpur</option>
+                  <option>Ahmedabad</option>
+                  <option>Surat</option>
+                </select>
+              </div>
+
+              <div class="inputBx">
+                <label style="margin-left: 20px">Zip Code</label>
+                <input
+                  id="s1"
+                  style="width: 141px"
+                  type="number"
+                  placeholder="Type here"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- For Password And Confirm Password -->
+            <div class="inputBx">
+              <input type="password" placeholder=" Password" required />
+              <img src="lock.png" />
+            </div>
+
+            <div class="inputBx">
+              <input type="password" placeholder="Confirm Password" required />
+              <img src="lock.png" />
+            </div>
+
+            <!-- Sign up Button -->
+            <div class="inputBx">
+              <input type="submit" value="Sign Up" />
+            </div>
+          </form>
+
+          <!-- already have login -->
+          <p>If You already <a href="Login .html">Login</a></p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
