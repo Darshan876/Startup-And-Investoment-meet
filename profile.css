@@ -148,3 +148,10 @@ border: 1px solid grey;
     width: 100%;
 }
 
+label a:link{
+color : #000;
+background-color : transparent;
+text-decoration : none;
+}
+
+
