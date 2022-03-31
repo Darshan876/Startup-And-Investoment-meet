@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <!-- this is copy from "https://cdnjs.com/libraries/font-awesome" -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div>
+        <div class="profile-pic-div">
+          <img src="image.jpg" id="photo" />
+          <input type="file" id="file" />
+          <label for="file" id="uploadBtn">Choose Photo</label>
+        </div>
+        <script src="profile.js"></script>
+        <h1>
+          Alex
+          <br />
+          <span> Startup Company / Investor</span>
+        </h1>
+        <!-- input text  -->
+<div class="inputBx"> 
+        <h3>
+          <input type="text" placeholder="EmailAddress" required><br /></input>
+          <br/>
+          <input type="text" placeholder="State" required><br /></input>
+          <br>
+          <input type="text" placeholder="City" required><br /></input>
+          <br>
+          <input type="text" placeholder="Zip" required><br /></input>
+        </h3>
+      </div>
+      <br>
+
+      
+    
+        <ul class="inputBox">
+          
+          <!-- <input type="text" placeholder="Company Details"><br /></input> -->
+          <textarea placeholder="Company Details" required></textarea>
+          <input type="text" placeholder="Industry" required></input>
+        </ul>
+        <br>
+        <!-- for Aquistion -->
+        <ul class="inputBox">
+          <span>Aquistion:</span>
+          <br/>
+          <input type="number" placeholder="number of acquisitions" required><br/></input> 
+          <br/>
+          <input type="text" placeholder="acquiree name" required><br/></input>
+          <br/>
+          <input type="text" placeholder="announced date" required><br/></input>
+          <br>
+          <input type="number" placeholder="price" required><br/></input>
+          <br>
+          <input type="text" placeholder="transaction name" required></input>
+        </ul>
+        <br>
+        <ul class="inputBox">
+          <input type="number" placeholder="total funding" required></input>
+        </ul>
+        <br>
+        <!-- Employee Details -->
+        <ul class="inputBox">
+          <span>Employee Details:</span>
+          <br>
+          <input type="text" placeholder="FOUNDER" required></input>
+          <br><br>
+          <input type="text" placeholder="CO-FOUNDER"></input>
+          <br><br>
+          <input type="text" placeholder="CEO" required></input>
+          <br><br>
+          <input type="text" placeholder="CTO"></input>
+          <br><br>
+          <input type="text" placeholder="VICE PRESIDENT"></input>
+        </ul>
+        <br>
+        <ul class="inputBox">
+<textarea placeholder="Company Details"></textarea>          
+        </ul>
+        <!-- button -->
+        <a class="btn" href="">Contact</a>
+        <a class="btn" href="">Verification</a>
+      </div>
+      <br>
+      <label class="signout"><a href="#" style="color: black;"> Sign Out</a></label>
+    </div>
+  </body>
+</html>
