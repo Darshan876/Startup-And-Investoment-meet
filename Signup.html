@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="login1.css" />
+  </head>
+  <body>
+    <section>
+      <h1 style="color: #fff">Startup And Investment</h1>
+      <div class="box">
+        <div class="form">
+          <h2>Sign Up</h2>
+
+          <form>
+            <!-- check box for startup and Inventory -->
+            <div class="checkbox">
+              <td>
+                <input
+                  type="radio"
+                  name="become"
+                  value="Become a Company"
+                  required
+                />
+
+                <label>Startup Company</label>
+
+                <br />
+
+                <input
+                  type="radio"
+                  name="become"
+                  value="Become a Investor"
+                  required
+                />
+                <label>Investor</label>
+              </td>
+            </div>
+            <br />
+
+            <!-- For Company Name -->
+            <div class="inputBx">
+              <input type="text" placeholder="name" required />
+              <img src="company.png" />
+            </div>
+
+            <!-- Company Email Address -->
+            <div class="inputBx">
+              <input type="email" placeholder="email address" required />
+              <img src="email.png" />
+            </div>
+
+            <!-- For Location -->
+            <div class="inputBx">
+              <input type="text" placeholder="address" required />
+              <img src="location.png" />
+            </div>
+
+            <div class="inputBx">
+              <input
+                type="number"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                placeholder="phone number"
+                required
+                maxlength="10"
+              />
+              <img src="phone.png" />
+            </div>
+
+            <!-- For Select state , City and Zip code -->
+            <div class="control-group">
+              <div class="col-md-4">
+                <label style="margin-left: 20px">State</label>
+                <select id="s1" style="width: 90px; height: 37px" required>
+                  <option disabled selected>Select state</option>
+                  <option>Gujarat</option>
+                  <option>Goa</option>
+                  <option>Assam</option>
+                  <option>Bihar</option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <label style="margin-left: 20px">City</label>
+                <select id="s1" style="width: 90px; height: 37px" required>
+                  <option disabled selected>Select city</option>
+                  <option>Pune</option>
+                  <option>Gandhinagar</option>
+                  <option>Ahmedabad</option>
+                  <option>Surat</option>
+                </select>
+              </div>
+
+              <div class="inputBx">
+                <label style="margin-left: 20px">Zip Code</label>
+                <input
+                  id="s1"
+                  style="width: 141px"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                  type="number"
+                  placeholder="Type here"
+                  required
+                  maxlength="6"
+                />
+              </div>
+            </div>
+
+            <!-- For Password And Confirm Password -->
+            <div class="inputBx">
+              <input type="password" placeholder=" Password" required />
+              <img src="lock.png" />
+            </div>
+
+            <div class="inputBx">
+              <input type="password" placeholder="Confirm Password" required />
+              <img src="lock.png" />
+            </div>
+
+            <!-- Sign up Button -->
+            <div class="inputBx">
+              <input type="submit" value="Sign Up" />
+            </div>
+          </form>
+
+          <!-- already have login -->
+          <p>If You already <a href="Login .html">Login</a></p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
