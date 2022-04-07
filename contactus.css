@@ -8,7 +8,7 @@
 }
 
 body{
-background: linear-gradient(90deg, rgb(228, 147, 48) 0%,rgb(228, 147, 48) 30%,rgb(216, 162, 96) 30%,rgb(216, 162, 96) 100%);
+background: linear-gradient(90deg, #0e3959 0%,#0e3959 30%,#03a9f5 30%,#03a9f5 100%);
 
 }
 
@@ -64,7 +64,7 @@ background: linear-gradient(90deg, rgb(228, 147, 48) 0%,rgb(228, 147, 48) 30%,rg
 }
 
 .contact h3{
-    color: #72490b;
+    color: #0e3959;
     font-weight: 500;
     font-size: 1.4em;
     margin-bottom: 10px;
@@ -96,7 +96,7 @@ background: linear-gradient(90deg, rgb(228, 147, 48) 0%,rgb(228, 147, 48) 30%,rg
 }
 
 .inputBox span{
-    color: #bd8722;
+    color:#18b7ff;
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: 500;
@@ -120,7 +120,8 @@ margin-bottom: 10px;
 }
 
 .inputBox input[type="submit"]{
-    background: #723707;
+    background: #199159cc;
+    /* background: #ff578b; */
     color: #fff;
     font-size: 1.1em;
     max-width: 120px;
@@ -136,12 +137,13 @@ margin-bottom: 10px;
 /* info */
 .info{
     /* full background */
-background:#fff;
+/* background:#fff; */
+background: #0e3959;
 }
 
 .info h3{
     /* text color */
-    color: #000;
+    color: #fff;
 }
 
 .info .infoBox div{
@@ -154,9 +156,8 @@ background:#fff;
  min-width: 40px;
  height: 40px;
  /* icon color and background */
- color: #000;
- background-color: rgb(192, 181, 181);
-
+ color: #fff;
+ background-color: #18b7ff;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -167,13 +168,13 @@ background:#fff;
 
 .info .infoBox div p{
     /* text color of address */
-    color: #000;
+    color: #fff;
     font-size: 1.1em;
 }
 
 .info .infoBox div a{
     /* link color */
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-size: 1.1em;
 }
@@ -190,13 +191,13 @@ background:#fff;
 }
 
 .sci li a {
-    color: #000;
+    color: #fff;
     font-size: 2em;
-    color: rgb(121, 109, 109);
+    color: #ccc;
 }
 
 .sci li a:hover{
-    color: #333;
+    color: #fff;
 }
 
 /* responsive display */
